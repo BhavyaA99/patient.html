@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Patient Information</title>
+</head>
+<body>
+<script type="text/javascript">
+	var data = '{"given":"Henry","family":"Levin","display":"University Health Network","gender":"male","conditions":"2","condition1":"-Diabetes", "condition2":"-High Blood Pressure", "condition3":"-Asthma"}';
+	var ob =JSON.parse(data);
+	document.writeln("<br>Name of Patient:" +ob.given +" " +ob.family);
+	document.writeln("<br>Organization Name:" +ob.display);
+	document.writeln("<br>Gender:" +ob.gender);
+	document.writeln("<br>Number of Conditions:" +ob.conditions);
+	document.writeln("<br>List of Conditions:"+ob.condition1 +"<br>"+ ob.condition2 + "<br>" + ob.condition3);
+	</script>
+	</body>
+	</html>
